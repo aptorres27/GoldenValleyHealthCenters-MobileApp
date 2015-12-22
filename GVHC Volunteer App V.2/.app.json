@@ -4,16 +4,70 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
-      "title": "Home View",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "homeModel",
+          "dataProvider": "gvhcVolunteerAppV2",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "title": "Golden Valley Health Center",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "formView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "contactInformation",
+              "title": "Contact Information",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "firstName",
+              "title": "First Name:",
+              "inputType": "text"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Form",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "gvhcVolunteerAppV2",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "title": "GVHC Volunteer App V.2 / GVHC Volunteer App V.2",
+      "source": "everlive",
+      "everliveKey": "cqfyoe9mv8xc22ow",
+      "offlineStorage": true
+    }
+  ],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "none",
   "view": "home",
-  "transition": "slide",
   "skin": "flat"
 }
