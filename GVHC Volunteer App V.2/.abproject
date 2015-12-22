@@ -1,0 +1,45 @@
+{
+  "ProjectName": "GVHC Volunteer App V.2",
+  "ProjectGuid": "03cb344d-0cdf-43f3-a0af-0e7eea4d60e2",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.GVHCVolunteerAppV2",
+  "DisplayName": "GVHC Volunteer App V.2",
+  "Author": "",
+  "Description": "GVHC Volunteer App V.2",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{3e6d9842-a253-47ed-a2b9-a111e2d46190}",
+  "WP8ProductID": "{9f8e9608-ddb0-46dd-853b-bb7a74a5235f}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.GVHCVolunteerAppV2",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
