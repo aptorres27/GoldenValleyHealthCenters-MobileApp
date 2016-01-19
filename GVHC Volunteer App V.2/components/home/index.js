@@ -13,7 +13,7 @@ app.home = kendo.observable({
     var provider = app.data.gvhcVolunteerAppV2,
         mode = 'signin',
         registerRedirect = 'home',
-        signinRedirect = 'home',
+        signinRedirect = 'volappform',
         init = function(error) {
             if (error) {
                 if (error.message) {

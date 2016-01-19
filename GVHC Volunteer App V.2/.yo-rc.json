@@ -1,7 +1,1 @@
-{
-  "generator-kendo-ui-mobile": {
-    "dependsOn": [
-      "generator-kendo-ui-mobile@0.0.12"
-    ]
-  }
-}
+{"generator-kendo-ui-mobile":{"dependsOn":["generator-kendo-ui-mobile@0.0.12"]},"sbLogInformation":{"accountId":"e52f0438-4e01-47a9-89df-58351c1f26a8","user":"atorres69@ucmerced.edu","projectName":"GVHC Volunteer App V.2","appId":"cqfyoe9mv8xc22ow"}}

@@ -1,0 +1,385 @@
+<div data-role="view" data-title="Volunteer Application" data-layout="main" data-model="app.volappform" data-show="app.volappform.onShow" data-after-show="app.volappform.afterShow">
+    <div id="volappformModel" class="form-view">
+        <center>
+        <img src="http://mercedcountyevents.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-01-at-4.29.28-PM.png" height="150" width="380" position= absolute>
+        </center>
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Contact Information</h4>
+                </li>
+                <li>
+
+                    <label>First Name:
+                        <input data-bind="value: volappformModel.fields.name" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Middle Name:
+                        <input data-bind="value: volappformModel.fields.mname" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Last Name:
+                        <input data-bind="value: volappformModel.fields.lname" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Cell Phone Number:
+                        <input data-bind="value: volappformModel.fields.cell" type="tel">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Alternative Phone Number:
+                        <input data-bind="value: volappformModel.fields.alttel" type="tel">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Local Address Information</h4>
+                </li>
+                <li>
+
+                    <label>Street Address 1:
+                        <input data-bind="value: volappformModel.fields.lastreet1" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Street Address 2:
+                        <input data-bind="value: volappformModel.fields.lastreet2" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>City:
+                        <input data-bind="value: volappformModel.fields.lacity" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>State:
+                        <input data-bind="value: volappformModel.fields.lastate" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Zipcode:
+                        <input data-bind="value: volappformModel.fields.lazipcode" type="number">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Days and Hours Available</h4>
+                </li>
+                <li>
+
+                    <label>Monday:
+                        <input data-bind="value: volappformModel.fields.monday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.mtime" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Tuesday:
+                        <input data-bind="value: volappformModel.fields.tuesday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.ttime" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Wednesday:
+                        <input data-bind="value: volappformModel.fields.wednesday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.wtime" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Thursday:
+                        <input data-bind="value: volappformModel.fields.thursday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.thtimes" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Friday:
+                        <input data-bind="value: volappformModel.fields.friday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.ftimes" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Saturday:
+                        <input data-bind="value: volappformModel.fields.saturday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.sattimes" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Sunday:
+                        <input data-bind="value: volappformModel.fields.sunday" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Times:
+                        <input data-bind="value: volappformModel.fields.suntime" placeholder="ex. 8am-11am, 1pm-5pm" type="text">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Education</h4>
+                </li>
+                <li>
+
+                    <label>School Name:
+                        <input data-bind="value: volappformModel.fields.schoolname" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Degree/Diploma:
+                        <input data-bind="value: volappformModel.fields.degree" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Major:
+                        <input data-bind="value: volappformModel.fields.major" type="text">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Professional Licenses and Certificates</h4>
+                </li>
+                <li>
+
+                    <label>Description of License or Certificate:
+                        <input data-bind="value: volappformModel.fields.description" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>License/Certificate Number:
+                        <input data-bind="value: volappformModel.fields.licensenumber" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>State:
+                        <input data-bind="value: volappformModel.fields.plstate" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Expiration Date:
+                        <input data-bind="value: volappformModel.fields.expdate" type="text">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Employment/Internship/Volunteer History</h4>
+                </li>
+                <li>
+
+                    <p id="instructions" data-bind="html: volappformModel.fields.instructions"></p>
+
+                </li>
+                <li>
+
+                    <label>Employment:
+                        <input data-bind="value: volappformModel.fields.employment1" placeholder="Golden Valley Health Centers, Oct 2014-Jan 2015, Filing Assistant- filing, typing" type="text">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Background</h4>
+                </li>
+                <li>
+
+                    <p id="backgroundrules" data-bind="html: volappformModel.fields.backgroundrules"></p>
+
+                </li>
+                <li>
+                    <label>Sex:
+                        <select data-bind="value: volappformModel.fields.sex" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+
+                    <p id="race" data-bind="html: volappformModel.fields.race"></p>
+
+                </li>
+                <li>
+
+                    <label>HISPANIC
+                        <input data-bind="value: volappformModel.fields.hispanic" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>AMERICAN INDIAN OR ALASKA NATIVE
+                        <input data-bind="value: volappformModel.fields.americanindian" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>ASIAN
+                        <input data-bind="value: volappformModel.fields.asian" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>BLACK/AFRICAN AMERICAN (not of Hispanic origin)
+                        <input data-bind="value: volappformModel.fields.black" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER
+                        <input data-bind="value: volappformModel.fields.hawaiian" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>WHITE (not of Hispanic origin)
+                        <input data-bind="value: volappformModel.fields.white" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>I CHOOSE NOT TO PROVIDE THIS INFORMATION
+                        <input data-bind="value: volappformModel.fields.notprovide" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <p id="veteran" data-bind="html: volappformModel.fields.veteran"></p>
+
+                </li>
+                <li>
+
+                    <label>I AM A PROTECTED VETERAN
+                        <input data-bind="value: volappformModel.fields.protectedveteran" type="checkbox">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>I AM NOT A PROTECTED VETERAN
+                        <input data-bind="value: volappformModel.fields.notprotect" type="checkbox">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Disability:</h4>
+                </li>
+                <li>
+
+                    <p id="impairment" data-bind="html: volappformModel.fields.impairment"></p>
+
+                </li>
+                <li>
+
+                    <label>Voluntary Self-Identification of Disability
+                        <input data-bind="value: volappformModel.fields.selfidentification" type="text">
+                    </label>
+
+                </li>
+                <li class="group-separator">
+                    <h4 class="group-separator-header">Certification</h4>
+                </li>
+                <li>
+
+                    <p id="certification1" data-bind="html: volappformModel.fields.certification1"></p>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: volappformModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: volappformModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_volappformModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_volappformModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_volappform -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_volappform -->
+</div>

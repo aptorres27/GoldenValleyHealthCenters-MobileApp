@@ -1,28 +1,27 @@
 'use strict';
 
-app.formView = kendo.observable({
+app.welcome = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_formView
+// START_CUSTOM_CODE_welcome
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_formView
+// END_CUSTOM_CODE_welcome
 (function(parent) {
-    var formViewModel = kendo.observable({
+    var welcomeModel = kendo.observable({
         fields: {
-            firstName: '',
-            contactInformation: '',
+            welcomeParagraph: '',
         },
         submit: function() {},
         cancel: function() {}
     });
 
-    parent.set('formViewModel', formViewModel);
-})(app.formView);
+    parent.set('welcomeModel', welcomeModel);
+})(app.welcome);
 
-// START_CUSTOM_CODE_formViewModel
+// START_CUSTOM_CODE_welcomeModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_formViewModel
+// END_CUSTOM_CODE_welcomeModel

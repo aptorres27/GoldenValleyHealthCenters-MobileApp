@@ -12,7 +12,7 @@
           "emailLabel": "Email",
           "passwordLabel": "Password",
           "signinLabel": "Sign In",
-          "signinRedirect": "home",
+          "signinRedirect": "volappform",
           "enableRegistration": true,
           "gotoRegisterLabel": "Register",
           "registerEmailLabel": "Email",
@@ -23,36 +23,408 @@
         }
       ],
       "title": "Golden Valley Health Center",
-      "addToNavigation": true,
-      "icon": "home"
+      "addToNavigation": false
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "formView",
+      "name": "welcome",
       "components": [
         {
           "type": "kendo-ui-mobile:form",
           "components": [
             {
               "type": "kendo-ui-mobile:field",
-              "name": "contactInformation",
+              "name": "welcomeParagraph",
+              "title": "Paragraph",
+              "inputType": "paragraph"
+            }
+          ],
+          "name": "welcomeModel",
+          "submitButton": "Proceed to Application",
+          "cancelButton": "Log Out"
+        }
+      ],
+      "title": "Welcome",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "volappform",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "contactinformation",
               "title": "Contact Information",
               "inputType": "group-separator"
             },
             {
               "type": "kendo-ui-mobile:field",
-              "name": "firstName",
+              "name": "name",
               "title": "First Name:",
               "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "mname",
+              "title": "Middle Name:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lname",
+              "title": "Last Name:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "cell",
+              "title": "Cell Phone Number:",
+              "inputType": "tel"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "alttel",
+              "title": "Alternative Phone Number:",
+              "inputType": "tel"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "localadd",
+              "title": "Local Address Information",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lastreet1",
+              "title": "Street Address 1:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lastreet2",
+              "title": "Street Address 2:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lacity",
+              "title": "City:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lastate",
+              "title": "State:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "lazipcode",
+              "title": "Zipcode:",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "avail",
+              "title": "Days and Hours Available",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "monday",
+              "title": "Monday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "mtime",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "tuesday",
+              "title": "Tuesday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "ttime",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "wednesday",
+              "title": "Wednesday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "wtime",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "thursday",
+              "title": "Thursday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "thtimes",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "friday",
+              "title": "Friday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "ftimes",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "saturday",
+              "title": "Saturday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "sattimes",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "sunday",
+              "title": "Sunday:",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "suntime",
+              "title": "Times:",
+              "inputType": "text",
+              "placeholder": "ex. 8am-11am, 1pm-5pm"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "education",
+              "title": "Education",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "schoolname",
+              "title": "School Name:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "degree",
+              "title": "Degree/Diploma:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "major",
+              "title": "Major:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "certificates",
+              "title": "Professional Licenses and Certificates",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "description",
+              "title": "Description of License or Certificate:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "licensenumber",
+              "title": "License/Certificate Number:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "plstate",
+              "title": "State:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "expdate",
+              "title": "Expiration Date:",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "employment",
+              "title": "Employment/Internship/Volunteer History",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "instructions",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Please enter your employment/internship/volunteer history for the past 5 years. Please begin with your current or most recent position. \n\nPlease follow this format:\n\nEmployer Name, Employment Date, Position and duties\n\nEx. Golden Valley Health Centers, Oct 2014-Jan 2015, Filing Assistant- filing, typing"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "employment1",
+              "title": "Employment:",
+              "inputType": "text",
+              "placeholder": "Golden Valley Health Centers, Oct 2014-Jan 2015, Filing Assistant- filing, typing"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "background",
+              "title": "Background",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "backgroundrules",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Submission of this information is voluntary. Refusal to complete this section will not subject any applicant for employment or any employee to adverse treatment. This information will be maintained separately in a confidential file, will not be used in consideration for your employment, and will not be seen by the hiring manager or search committees."
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "sex",
+              "title": "Sex:",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "race",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Please answer the question below and select the racial categories that apply to you."
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "hispanic",
+              "title": "HISPANIC",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "americanindian",
+              "title": "AMERICAN INDIAN OR ALASKA NATIVE",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "asian",
+              "title": "ASIAN",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "black",
+              "title": "BLACK/AFRICAN AMERICAN (not of Hispanic origin)",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "hawaiian",
+              "title": "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "white",
+              "title": "WHITE (not of Hispanic origin)",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "notprovide",
+              "title": "I CHOOSE NOT TO PROVIDE THIS INFORMATION",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "veteran",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Invitation to Self-Identify Veteran Status"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "protectedveteran",
+              "title": "I AM A PROTECTED VETERAN",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "notprotect",
+              "title": "I AM NOT A PROTECTED VETERAN",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "disability",
+              "title": "Disability:",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "impairment",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "You are considered to have a disability if you have a physical or mental impairment or medical condition that substantially limits a major life activity, or if you have a history or record of such an impairment or medical condition. Please state any:"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "selfidentification",
+              "title": "Voluntary Self-Identification of Disability",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "certification",
+              "title": "Certification",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "certification1",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "By pressing the Confirm button, I certify that the information contained on this application form is true, correct and complete to the best of my knowledge. I understand that any false or incomplete information may be grounds for disqualification or separation. In addition, I understand that a thorough reference checking process will occur and hereby authorize Golden Valley Health Centers to make inquiries regarding my education, work experience and references, unless otherwise stated. I hereby release all parties and persons associated with any such inquiries from liability in connection with information they provide. I understand that certain positions may require background checks including a request for criminal history information. I have read and understand the information on this application."
             }
           ],
-          "name": "formViewModel",
+          "name": "volappformModel",
           "submitButton": "Confirm",
           "cancelButton": "Cancel"
         }
       ],
-      "title": "Form",
-      "addToNavigation": false
+      "title": "Volunteer Application",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [
@@ -69,5 +441,11 @@
   "name": "kendoUiMobileApp",
   "navigation": "none",
   "view": "home",
-  "skin": "flat"
+  "skin": "flat",
+  "sbLogInformation": {
+    "accountId": "e52f0438-4e01-47a9-89df-58351c1f26a8",
+    "user": "atorres69@ucmerced.edu",
+    "projectName": "GVHC Volunteer App V.2",
+    "appId": "cqfyoe9mv8xc22ow"
+  }
 }

@@ -1,0 +1,27 @@
+<div data-role="view" data-title="Welcome" data-layout="main-nonav" data-model="app.welcome" data-show="app.welcome.onShow" data-after-show="app.welcome.afterShow">
+    <div id="welcomeModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+
+                    <p id="welcomeParagraph" data-bind="html: welcomeModel.fields.welcomeParagraph"></p>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: welcomeModel.cancel }">Log Out</a>
+                <a class="primary" data-role="button" data-bind="events: { click: welcomeModel.submit }">Proceed to Application</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_welcomeModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_welcomeModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_welcome -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_welcome -->
+</div>

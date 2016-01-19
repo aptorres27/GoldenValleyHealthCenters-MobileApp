@@ -7,7 +7,7 @@
             url: '//platform.telerik.com/bs-api/v1/',
             scheme: 'https'
         }),
-        accessTokenCacheKey = "access_token",
+        accessTokenCacheKey = "z0136c3vl80wcjvjiaq5utd6cw7q8rzv",
         providerAuthentication = provider.authentication,
         providerLogin = provider.Users.login,
         authentication = {
